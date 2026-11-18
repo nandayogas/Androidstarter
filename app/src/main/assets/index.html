@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Launcher HP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-size="m">
+<div id="wall" data-wall="senja"></div><div id="shade"></div>
+<main id="app">
+  <header class="top">
+    <div><div id="time">--:--</div><div id="date"></div></div>
+    <div class="tools">
+      <input id="search" type="search" placeholder="Cari aplikasi" autocomplete="off">
+      <button id="btnAdd" class="btn primary">Tambah aplikasi</button>
+      <button id="btnScan" class="btn">Impor semua</button>
+      <button id="btnSet" class="btn">Pengaturan</button>
+    </div>
+  </header>
+  <nav id="tabs" class="tabs"></nav>
+  <section id="grid" class="grid"></section>
+  <div id="empty" class="empty" hidden><div><h2 id="eTitle"></h2><p id="eText"></p></div></div>
+</main>
+<footer class="dock-wrap"><div id="dock" class="dock"></div></footer>
+<div id="menu" class="menu" hidden></div>
+<div id="modal" class="modal" hidden></div>
+<aside id="settings" class="settings" hidden></aside>
+<div id="toast" class="toast" hidden></div>
+<script src="bridge.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
